@@ -19,3 +19,14 @@
 //     return result;
 // }
 // console.log(numberToPower(10, 6));
+
+//Write a function which calculates the average of the numbers in a given list.
+
+// function findAverage(array) {
+//     let result = 0;
+//     for (const element of array) {
+//         result = result + element;
+//     }
+//     return result/array.length;
+// }
+// console.log(findAverage([2,2,2]));
