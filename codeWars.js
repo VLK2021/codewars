@@ -46,10 +46,12 @@
 // }
 // _if(true,function(){console.log("True")}, function(){console.log("false")})
 
-//------------------------------------------------------------------------------------------------------------
+//-----------5-------------------------------------------------------------------------------------------------
+//Code as fast as you can! You need to double the integer and return it.
+// function doubleInteger(i) {
+//     i = i * 2;
+//     return i;
+// }
+// console.log(doubleInteger(2));
 
-function doubleInteger(i) {
-    i = i * 2;
-    return i;
-}
-console.log(doubleInteger(2));
+//-------------------------------------------------------------------------------------------------------------
