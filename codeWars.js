@@ -151,10 +151,49 @@
 // const result = fibonacci(n);
 // console.log(`${n}-те число Фібоначчі: ${result}`);
 
+//-----------------------------------------------------------------------------------------------------------
+// Вам надається масив об'єктів, що представляють співробітників з їхніми іменами та зарплатами.
+// const coworkers = [{name: 'Andy', salary: 750}, {name: 'Bernard', salary: 500}, {name: 'Pam', salary: 900}]
+// Реалізуйте методи що приймають масив такого типу і реалізують:
+//     визначення загальних витрат на зарплати для компанії на основі даних про співробітників.
+//     визначення співробітника(ів) з найвищою зарплатою.
+//     визначення середньої зарплати всіх співробітників.
+//     визначити всіх працівників, які заробляють більше заданого параметром рівня зарплати.
 
+// const coworkers = [
+//     { name: 'Andy', salary: 750 },
+//     { name: 'Bernard', salary: 500 },
+//     { name: 'Pam', salary: 900 }
+// ];
+//
+// const company = {
+//     calculateTotalSalary: function () {
+//         return coworkers.reduce((total, coworker) => total + coworker.salary, 0);
+//     },
+//
+//     findHighestPaid: function () {
+//         const highestPaid = coworkers.reduce((max, coworker) =>
+//             coworker.salary > max.salary ? coworker : max
+//         );
+//         return highestPaid;
+//     },
+//
+//     calculateAverageSalary: function () {
+//         const totalSalary = this.calculateTotalSalary();
+//         return totalSalary / coworkers.length;
+//     },
+//
+//     findEmployeesAboveSalary: function (thresholdSalary) {
+//         return coworkers.filter(coworker => coworker.salary > thresholdSalary);
+//     }
+// };
+//
+// console.log("Загальні витрати на зарплати:", company.calculateTotalSalary());
+// console.log("Співробітник з найвищою зарплатою:", company.findHighestPaid());
+// console.log("Середня зарплата всіх співробітників:", company.calculateAverageSalary());
+// console.log("Співробітники з зарплатою більше 600:", company.findEmployeesAboveSalary(600));
 
-
-
+//----------------------------------------------------------------------------------------------------
 
 
 
