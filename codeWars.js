@@ -137,20 +137,21 @@
 //     Результат обчислення повинен бути виведений або повернутий користувачу.Реалізація може використовувати алгоритм
 // за допомогою рекурсії, ітерації або будь-якого іншого підходу.
 
-// function fibonacci(n) {
-//     if (n <= 0) {
-//         return 0;
-//     } else if (n === 1) {
-//         return 1;
-//     } else {
-//         return fibonacci(n - 1) + fibonacci(n - 2);
+// const getNumber=n=>{
+//     if (!n | typeof n !=="number"){
+//         return "enter valid number"
 //     }
-// }
 //
-// const n = parseInt(prompt("Введіть номер числа Фібоначчі:"));
-// const result = fibonacci(n);
-// console.log(`${n}-те число Фібоначчі: ${result}`);
-
+//     const array=[1,1];
+//
+//     for (let i = 3; i <= n; i++){
+//         const number=array[i-3]+array[i-2];
+//         array.push(number);
+//     }
+//
+//     return array[n-1];
+// }
+// console.log(getNumber(300));
 //-----------------------------------------------------------------------------------------------------------
 // Вам надається масив об'єктів, що представляють співробітників з їхніми іменами та зарплатами.
 // const coworkers = [{name: 'Andy', salary: 750}, {name: 'Bernard', salary: 500}, {name: 'Pam', salary: 900}]
