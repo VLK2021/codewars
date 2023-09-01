@@ -216,12 +216,37 @@
 //
 // console.log(func('qqqq'));
 
-///-------------------------------------------------------------------------------------------------------------
+//  const revertCase = (string = '') => {
+//     let str = '';
+//     for (const element of string) {
+//         if (element === element.toUpperCase()) {
+//             str += element.toLowerCase();
+//         } else if (element === element.toLowerCase()) {
+//             str += element.toUpperCase();
+//         } else {
+//             str += element;
+//         }
+//     }
+//     console.log(str);
+//     return str;
+// };
+//
+// revertCase('wwwwwwww');
 
-
-
-
-
+// export const revertCase = (string = '') => {
+//     let result = '';
+//
+//     for (const char of string) {
+//         if (char === char.toUpperCase()) {
+//             result += char.toLowerCase();
+//         } else {
+//             result += char.toUpperCase();
+//         }
+//     }
+//
+//     return result;
+// }
+//-----------------------------------------------------------------------------------------------------
 
 
 
