@@ -195,11 +195,28 @@
 // console.log("Співробітники з зарплатою більше 600:", company.findEmployeesAboveSalary(600));
 
 //----------------------------------------------------------------------------------------------------
+// Необхідно реалізувати функцію revertCase, яка приймає в якості аргументу стрічку, а повертає нову стрічку в якій
+// кожна літера змінила регістр.
+//     Приклад:
+// revertCase('Hello World'); // hELLO wORLD
 
 
+// function func(string = '') {
+//     let str ='';
+//     for (const element of string) {
+//         if (element === element.toUpperCase()){
+//             str += element.toLowerCase()
+//         }
+//         if (element === element.toLowerCase()){
+//             str += element.toUpperCase()
+//         }
+//     }
+//     return str;
+// }
+//
+// console.log(func('qqqq'));
 
-
-
+///-------------------------------------------------------------------------------------------------------------
 
 
 
