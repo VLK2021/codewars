@@ -269,15 +269,49 @@
 // };
 //-----------------------------------------------------------------------------------------------------
 
+// Необхідно реалізувати функцію stringToArray, яка приймає в якості першого аргументу стрічку, а повертає масив,
+//     елементами якого стануть частини стрічки розділені пробілом.
+//     Приклад:
+// stringToArray('Hello, World!'); // ['Hello,', 'World!']
+
+// function stringToArray(string = ''){
+//     return string.split(' ');
+// }
+//
+// console.log(stringToArray('Hello, World!'));
+
+//-------------------------------------------------------------------------------------------------------
+
+// Необхідно реалізувати функцію toCamelCase, яка приймає в якості першого аргументу стрічку, слова в якій розділені
+// пробілами, а повертає слово у camelCase форматі:
+//     Приклад:
+//         toCamelCase('Hello World!'); // helloWorld!
 
 
+// function toCamelCase(someString = '') {
+//     let str = '';
+//     let arr = someString.split(' ');
+//     for (const string of arr) {
+//         str = str + string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+//     }
+//     return str.charAt(0).toLowerCase() + str.slice(1);
+// }
+//
+// console.log(toCamelCase('HellO WorLd!'));
 
 
-
-
-
-
-
-
-
+// const toCamelCase = (someString = '') => {
+//     const arr = someString.split(' ');
+//
+//     const transformedArr = arr.map((word, index) => {
+//         if (index === 0) {
+//             return word.toLowerCase();
+//         }
+//
+//         return word[0].toUpperCase() + word.slice(1).toLowerCase();
+//     });
+//
+//     return transformedArr.join('');
+// };
+//-------------------------------------------------------------------------------------------------------------
 
