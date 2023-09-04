@@ -248,6 +248,34 @@
 // }
 //-----------------------------------------------------------------------------------------------------
 
+// Необхідно реалізувати функцію arrToString, яка приймає в якості аргументу масив, а повертає всі елементи масиву
+// об'єднані в стрічку.
+// Приклад:
+//     arrToString(['apple', 'orange', 'banana'], '-'); // 'apple-orange-banana
+
+// function arrToString(arr = [], delimiter = '') {
+//     let str = '';
+//     for (let i = 0; i < arr.length; i++) {
+//         const element = arr[i];
+//             str = str + element + delimiter;
+//     }
+//
+//     return str.slice(0, -1);
+// }
+// console.log(arrToString(['ddd', 'www', 'rrr', 'uuu'], '-'));
+
+// const arrToString = (arr = [], delimiter = '') => {
+//     return arr.join(delimiter);
+// };
+//-----------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
 
 
 
