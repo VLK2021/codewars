@@ -485,6 +485,33 @@
 // console.log(replaceCharacters('Hello, user', 'user', 'admin'));
 //-----------------------------------------------------------------------------------------------------------------
 
+// Необхідно реалізувати функцію "isIsogram".
+//     Ізограма - це слово яке не має повторювальних букв.
+//     Реалізуйте функцію яка буде перевіряти слово на ізограму та повертати результатом true / false, відповідно до того
+// чи є слово ізограмою. Також потрібно звести слово в нижій регіст.
+//     Приклад:
+// isIsogram("isogram"); // true
+// isIsogram("hello"); // false
 
+// function isIsogram(string) {
+//     string = string.toLowerCase();
+//     const seenLetters = {};
+//
+//     for (let i = 0; i < string.length; i++) {
+//         const element = string[i];
+//         if (seenLetters[element]) {
+//             return false;
+//         }
+//         seenLetters[element] = true;
+//     }
+//     return true;
+// }
+// console.log(isIsogram("hello"));
+
+// const isIsogram = (str) => {
+//     const uniqueCharsSize = new Set(str.toLowerCase().split('')).size;
+//     return str.length === uniqueCharsSize;
+// };
+//-----------------------------------------------------------------------------------------------------------
 
 
