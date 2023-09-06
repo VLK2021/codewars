@@ -423,13 +423,31 @@
 // console.log(highestAndLowest('1 2 3 -4 6'));
 //---------------------------------------------------------------------------------------------------------------
 
+// Уявимо що ми розробляємо онлайн гру, та зберігаємо "id" користувачів в масиві:
+//     const usersArr = ['user-1', 'user-2', 'user-3', ...].
+//         Приклад:
+// removeByIndex(['user-1', 'user-2', 'user-3'], 1); // ['user-1', 'user-3']
+
+// function removeByIndex(arr = [], index = 0) {
+//     const newArr = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         const element = arr[i];
+//         if (i !== index) {
+//             newArr.push(element);
+//         }
+//     }
+//     return newArr;
+// }
+// console.log(removeByIndex(['user-1', 'user-2', 'user-3'], 1));
 
 
-
-
-
-
-
+// const removeByIndex = (arr = [], index = 0) => {
+//     const elementsBeforeIndex = arr.slice(0, index);
+//     const elementsAfterIndex = arr.slice(index + 1, arr.length);
+//
+//     return [...elementsBeforeIndex, ...elementsAfterIndex];
+// };
+//----------------------------------------------------------------------------------
 
 
 
