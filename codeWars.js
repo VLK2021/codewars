@@ -514,4 +514,45 @@
 // };
 //-----------------------------------------------------------------------------------------------------------
 
+// Ви разом з командою працюєте над оновленням CMS. Одним з елементів цієї системи є Заголовок сторінки, який містить
+// аватар користувача. Але не всі користувачі додали до системи своє фото, тому дизайнер вирішив, що в такому разі
+// треба показати ініціали користувача. В цьому завданні, вам необхідно написати функцію nameAbbreviation, яка приймає
+// імʼя користувача (firstName та lastName) і повертає по першій літері від кожної частини імені в заголовному регістрі.
+//     Якщо lastName пусте, то повернути першу літеру firstName і крапку (firstName завжди містить, принаймі,
+//     один символ - вимога системи).
+// Приклад:
+//     nameAbbreviation("Łukasz", "Żyłowski");
+// // => "ŁŻ"
+// nameAbbreviation("pranavi", "kumar");
+// // => "PK"
+// nameAbbreviation("anonymous", "");
+// // => "A."
+
+// function nameAbbreviation(firstName = "", lastName = "") {
+//    if (!lastName){
+//        return firstName.substring(0,1).toUpperCase() + '.';
+//    } else {
+//        return firstName.substring(0,1).toUpperCase() + lastName.substring(0,1).toUpperCase();
+//    }
+// }
+// console.log(nameAbbreviation("anonymous", ""));
+
+// const nameAbbreviation = (firstName = "", lastName = "") => {
+//     const firstLetter = firstName.charAt(0);
+//     let lastLetter = lastName.charAt(0);
+//     if (lastLetter === "") {
+//         lastLetter = ".";
+//     }
+//     let abbreviation = firstLetter.concat(lastLetter);
+//     abbreviation = abbreviation.toLocaleUpperCase();
+//     return abbreviation;
+// };
+//-------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
 
