@@ -652,7 +652,37 @@
 // };
 //-----------------------------------------------------------------------------------------------------------------
 
+// Необхідно реалізувати функцію, яка приймає об'єкт та назви властивостей об'єкта:
+//     const obj = {}
+// omit(obj, 'field-1', 'field-2', ...'field-n');
+// А повертає новий об'єкт з властивостями, які не були вказані в аргументах функції
+// Example:
+//     const fruits = {
+//         apple: 2,
+//         orange: 4,
+//         banana: 3
+//     };
+// console.log(omit(fruits, 'apple', 'banana')); // { orange: 4 }
 
-
+// const fruits = {
+//     apple: 2,
+//     orange: 4,
+//     banana: 3
+// };
+//
+// const omit = (obj, ...fields) => {
+//     const objNew = {};
+//
+//     for (const objKey in obj) {
+//         if (!fields.includes(objKey)) {
+//             objNew[objKey] = obj[objKey];
+//         }
+//     }
+//
+//     return objNew;
+// }
+//
+// console.log(omit(fruits, 'apple', 'banana'));
+//---------------------------------------------------------------------------------------------------------------
 
 
