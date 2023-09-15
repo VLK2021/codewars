@@ -595,17 +595,62 @@
 // };
 //------------------------------------------------------------------------------------------------------------
 
+// Необхідно реалізувати функцію, яка на вхід приймає об'єкт та назви властивостей об'єкта:
+//     Example:
+//         const obj = {}
+// pick(obj, 'field-1', 'field-2', ...'field-n');
+// А повертає новий об'єкт з властивостями, які були вказані в аргументах функції
+// Example:
+//     const fruits = {
+//         apple: 2,
+//         orange: 4,
+//         banana: 3
+//     };
+// console.log(pick(fruits, 'apple', 'banana')); // { apple: 2, banana: 3 }
 
+// const fruits = {
+//     apple: 2,
+//     orange: 4,
+//     banana: 3
+// };
+//
+// const pick = (obj, ...fields) => {
+//     const objNew = {};
+//         for (const element of fields) {
+//             for (const objKey in obj) {
+//             if (element === objKey){
+//                 objNew[element] = obj[objKey];
+//             }
+//         }
+//     }
+//     return objNew;
+// }
+// console.log(pick(fruits, 'apple', 'banana'));
 
+// const pick = (obj, ...fields) => {
+//     const objNew = {};
+//
+//     for (const element of fields) {
+//         if (obj.hasOwnProperty(element)) {
+//             objNew[element] = obj[element];
+//         }
+//     }
+//
+//     return objNew;
+// }
 
-
-
-
-
-
-
-
-
+// const pick = (obj, ...fields) => {
+//     const result = {};
+//
+//     for (const [key, value] of Object.entries(obj)) {
+//         if (fields.includes(key)) {
+//             result[key] = value;
+//         }
+//     }
+//
+//     return result;
+// };
+//-----------------------------------------------------------------------------------------------------------------
 
 
 
