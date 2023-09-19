@@ -685,4 +685,39 @@
 // console.log(omit(fruits, 'apple', 'banana'));
 //---------------------------------------------------------------------------------------------------------------
 
+// Необхідно реалізувати функцію toSnakeCase, яка приймає в якості першого аргументу слово, у форматі camelCase,
+//     а повертає слово у snakeCase форматі:
+//     Приклад:
+//         toCamelCase('helloWorld'); // hello_world
+
+
+// const toSnakeCase = (string) => {
+//     return string.replace(/[A-Z]/g, function(match) {
+//         return '_' + match.toLowerCase();
+//     }).replace(/^_/, ''); // Видаляємо можливий зайвий "_" на початку рядка.
+// }
+// console.log(toSnakeCase('_helloWorldAs'));
+
+// const toSnakeCase = (string) => {
+//     const arr = string.split('')
+//     const resault = arr.map((el, index) => {
+//         if (index === 0) {
+//             return el.toLowerCase();
+//         }
+//
+//         if (el === el.toUpperCase()) {
+//             return `_${el.toLowerCase()}`;
+//         }
+//         return el;
+//     });
+// return resault.join('');
+// }
+// console.log(toSnakeCase('helloWorldAs'));
+//------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
 
