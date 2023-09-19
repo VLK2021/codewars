@@ -715,6 +715,65 @@
 // console.log(toSnakeCase('helloWorldAs'));
 //------------------------------------------------------------------------------------------------------------------
 
+// Необхідно реалізувати функцію pluck, яка бере масив об'єктів та повертає масив значень певного поля.' +
+// ' Функція не повинна змінювати початковий масив.
+// Приклад:
+//
+//     const users = [{
+//         name: 'User One',
+//         age: 39,
+//         id: 1
+//     }, {
+//         name: 'User Two',
+//         age: 27,
+//         id: 2
+//     }];
+//
+// pluck(users, 'name'); // ['User One', 'User Two']
+
+
+// const users = [
+//     {
+//         name: 'User One',
+//         age: 39,
+//         id: 1
+//     },
+//     {
+//         name: 'User Two',
+//         age: 27,
+//         id: 2
+//     }
+//     ];
+//
+// const pluck = (collection = [], key = '') => {
+//     const arr = [];
+//
+//     for (const element of collection) {
+//         if (element[key] !== undefined) {
+//             arr.push(element[key])
+//         }
+//     }
+//
+//     return arr;
+// }
+// console.log(pluck(users, 'name'));
+
+
+// const pluck = (collection = [], key = '') => {
+//     return collection.map((el) => el[key]);
+// }
+//-------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
 
 
 
