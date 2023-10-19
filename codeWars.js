@@ -826,10 +826,19 @@
 // console.log(StringChallenge('coderbyte'));
 //==================================================================================================================
 
+// Нехай функція StringChallenge (str) прийме параметр str, що передається, і напише першу літеру кожного слова з великої
+// літери. Слова будуть відокремлені лише одним пропуском.
 
-
-
-
+// function StringChallenge(str) {
+//     const words = str.split(' ');
+//     const capitalizedWords = words.map(word => word.charAt(0).toUpperCase() + word.slice(1));
+//
+//     const outputStr = capitalizedWords.join(' ');
+//     return outputStr;
+// }
+//
+// console.log(StringChallenge("hello world"));
+//==============================================================================================================
 
 
 
