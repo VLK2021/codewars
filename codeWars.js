@@ -840,9 +840,23 @@
 // console.log(StringChallenge("hello world"));
 //==============================================================================================================
 
+//Нехфй функція приймає num і поверне кількість символів  в num.
+
+// function func (num) {
+//     return num.toString().split('').length;
+// }
+//
+// const result = func(5684218);
+// console.log(result);
 
 
-
-
-
-
+// function func(current) {
+//     if (current.toString().length === 1) {
+//         return 1;
+//     }
+//
+//     return 1 + func(current.toString().substring(1));
+// }
+//
+// console.log(func(100));
+// console.log(func("Hello"));
