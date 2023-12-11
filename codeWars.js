@@ -850,6 +850,7 @@
 // console.log(result);
 
 
+
 // function func(current) {
 //     if (current.toString().length === 1) {
 //         return 1;
