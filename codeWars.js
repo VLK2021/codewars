@@ -877,19 +877,37 @@
 //     return
 // }
 
-function findPath(mountain) {
-    // Створюємо копію гірського масиву для обчислень
-    let dp = mountain.map(row => row.slice());
-    // // Проходимо по горі знизу вгору, розраховуючи максимальні очки на кожній клітинці
-    for (let i = mountain.length - 2; i >= 0; i--) {
-        for (let j = 0; j < mountain[i].length; j++) {
-            // Для кожної клітинки розраховуємо максимальні очки, які можна набрати
-            dp[i][j] += Math.max(dp[i + 1][j], dp[i + 1][j + 1]);
+// function findPath(mountain) {
+//     // Створюємо копію гірського масиву для обчислень
+//     let dp = mountain.map(row => row.slice());
+//     // // Проходимо по горі знизу вгору, розраховуючи максимальні очки на кожній клітинці
+//     for (let i = mountain.length - 2; i >= 0; i--) {
+//         for (let j = 0; j < mountain[i].length; j++) {
+//             // Для кожної клітинки розраховуємо максимальні очки, які можна набрати
+//             dp[i][j] += Math.max(dp[i + 1][j], dp[i + 1][j + 1]);
+//         }
+//     }
+//     // // Повертаємо максимальну кількість очок, які можна набрати
+//     console.log(dp[0][0]);
+//     return dp[0][0];
+// }
+//
+// findPath([[6], [7, 10], [12, 11, 9], [90, 25, 13, 14]]);
+
+
+//сортування масиву по зростанню
+function sortArray(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] > arr[j]) {
+                // Міняємо місцями arr[i] та arr[j]
+                let temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
         }
     }
-    // // Повертаємо максимальну кількість очок, які можна набрати
-    console.log(dp[0][0]);
-    return dp[0][0];
+    console.log(arr);
 }
 
-findPath([[6], [7, 10], [12, 11, 9], [90, 25, 13, 14]]);
+sortArray([7, 5, 2, 3, 9]);
